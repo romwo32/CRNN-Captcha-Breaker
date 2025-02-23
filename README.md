@@ -1,5 +1,5 @@
 # Captcha-Breaker
-Exploring various Deep Learning approaches to solve CAPTCHA-related challenges. This repository includes a model implementation and evaluation for bypassing Text Recognition CAPTCHAs using CRNN. 🚀🔓
+Captcha-Breaker is a machine learning project designed to demonstrate the vulnerabilities of text-based captchas. Using Convolutional Recurrent Neural Networks (CRNNs), this project efficiently solves captchas, showcasing the growing insecurity of traditional captcha systems. The repository includes scripts for generating captcha data, training the model, and splitting datasets into various subsets for training and validation. This project serves as both a practical application of CRNNs and a reminder of the limitations of current captcha security mechanisms.
 
 # What are Captchas? 
 A CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a type of challenge-response test used to determine whether the user is a human or a bot. It is commonly used on websites and online services to prevent automated programs (bots) from performing actions that could be harmful or undesirable, such as spamming, brute-force attacks, or data scraping.
