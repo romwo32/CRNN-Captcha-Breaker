@@ -45,7 +45,7 @@ Somne Examples:
 # Dataset Splitter
 This repo also includes a short script wich splits the entire dataset in smaller sets for Training Validation and Testing. The Sizes of the sets can be adjusted in percent
 
-# CRNN
+# Model
 ## Overview:
 A CRNN is a combination of CNNs and RNNs that leverages the strengths of both models—CNNs for spatial feature extraction and RNNs for sequential modeling—making it ideal for tasks like speech and text recognition, where both local patterns and temporal dependencies are important.
 
