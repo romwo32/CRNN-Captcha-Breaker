@@ -1,4 +1,4 @@
-# Captcha-Breaker
+# CRNN Captcha-Breaker
 Captcha-Breaker is a machine learning project designed to demonstrate the vulnerabilities of text-based captchas. Using Convolutional Recurrent Neural Networks (CRNNs), this project efficiently solves captchas, showcasing the growing insecurity of traditional captcha systems. The repository includes scripts for generating captcha data, training the model, and splitting datasets into various subsets for training and validation. This project serves as both a practical application of CRNNs and a reminder of the limitations of current captcha security mechanisms.
 
 # What are Captchas? 
@@ -24,7 +24,7 @@ Exploring Application Potential: Researching how models solve CAPTCHAs can serve
 
 By ensuring that CAPTCHAs remain effective against evolving AI models, we help protect critical systems from bots and unauthorized access, ultimately safeguarding valuable assets like Crytocurrencys and other valuable assets.
 
-# Our Dataset
+# Dataset
 
 This repository contains a script designed to generate text-based CAPTCHAs with randomly assigned colors & 5000 pre generated CAPTCHAS. The script allows for customization of font, spacing, and rotation parameters before generating each CAPTCHA. The dataset has been curated to exclude CAPTCHA instances that may be too difficult to recognize. For example, to avoid confusion between similarly-shaped characters (like the lowercase 'x' and uppercase 'X'), we have limited our font to 'Arial' the available character set to "023456789ABCDEFHJKLMNPQRTUVWXYabdefghikmnqrty". Additionally, we introduce noise in the form of salt-and-pepper noise and varying line thicknesses and lengths to further challenge recognition.
 
