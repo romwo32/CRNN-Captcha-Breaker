@@ -45,59 +45,6 @@ Somne Examples:
 # Dataset Splitter
 This repo also includes a short script wich splits the entire dataset in smaller sets for Training Validation and Testing. The Sizes of the sets can be adjusted in percent
 
-
-# CNN
-## Overview:
-A CNN-based CAPTCHA solver is a deep learning model that uses Convolutional Neural Networks (CNNs) to recognize and decode CAPTCHA images by extracting visual patterns and classifying them into characters.
-
-Building Blocks:
-Convolutional Layer (Feature Extraction)
-Purpose: Identifies spatial features such as edges, shapes, and textures within the CAPTCHA image.
-How it works: Uses convolutional filters to detect patterns, followed by pooling layers to reduce dimensionality while preserving key features.
-Role in CAPTCHA solving: Converts raw pixel data into a structured feature representation.
-
-Fully Connected Layer (Classification):
-Purpose: Interprets the features extracted by the CNN and assigns them to specific characters.
-How it works: The high-level features are passed through dense layers, applying activation functions (e.g., Softmax) to classify each character.
-Role in CAPTCHA solving: Maps the extracted features to corresponding alphanumeric outputs.
-
-Decoding and Prediction:
-The model predicts each character in the CAPTCHA and reconstructs the final text.
-
-## Modell Aritecture:
-Data Loading:
-  Description: The dataset is loaded and split into training and test data.
-  Split: 80% training dataset, 20% test/validation set.
-  Additional Data Sources: Shared datasets can be used for better performance.
-  
-Preprocessing:
-  Grayscale Conversion: All images are converted to grayscale.
-  Rescaling: Images are resized to a uniform size of 25x67 pixels to ensure consistency in model input.
-  
-Model Architecture:
-  Convolutional Layers:
-    4 convolutional layers extract features and reduce image size.
-    MaxPooling layers reduce dimensions while retaining important features.
-    
-  Dropout Layers:
-    2 dropout layers help prevent overfitting.
-    
-  Dense Layer:
-    A fully connected layer processes the extracted features for final classification.
-    
-Optimization:
-  Hyperparameter Tuning: Adam optimizer is used for automatic learning rate adjustment.
-  Loss Function: Designed to minimize the difference between predicted and actual values.
-  
-CNN Model Training:
-  The model is trained using the processed dataset and optimized parameters.
-  The weights of the layers are gradually improved to maximize recognition accuracy.
-  
-Evaluation and Output:
-  Accuracy Calculation: The model is evaluated using the test set, measuring both individual character and full CAPTCHA accuracy.
-  Visual Representation: Selected results are displayed graphically for better interpretation.
-
-
 # CRNN
 ## Overview:
 A CRNN is a combination of CNNs and RNNs that leverages the strengths of both models—CNNs for spatial feature extraction and RNNs for sequential modeling—making it ideal for tasks like speech and text recognition, where both local patterns and temporal dependencies are important.
@@ -195,31 +142,6 @@ Achieving an accuracy of 97.2% is a remarkable result for our CRNN model, demons
 While CRNNs offer great potential, they also have their limitations. They are computationally intensive, which may affect real-time performance, and sourcing diverse, high-quality data for training can be challenging. Moreover, preprocessing is more complex for CRNNs compared to traditional models, and the model may struggle with highly distorted inputs or adversarial attacks.
 
 Nevertheless, CRNNs remain a powerful tool for OCR tasks, offering significant advantages in processing and predicting text sequences in varied conditions. With continued improvements in training data quality, model architecture, and preprocessing techniques, CRNNs can be further enhanced to address their current weaknesses.
-
-# LightGBM Model
-LightGBM (Light Gradient Boosting Machine) is a powerful and efficient machine learning model designed for high performance and speed with large datasets. It is particularly well-suited for classification and regression tasks and has been adapted here specifically for captcha recognition.
-
-## Data Ingestion
-The first step in the process is data ingestion, where captcha images are split into their individual characters and stored explicitly. This separation is crucial to ensure that the model can accurately process and recognize each component of the captcha.
-
-## Data Splitting
-Once the data is ingested, it is divided into training, testing, and validation sets. Typically, 80% of the data is used for training, while the remaining 20% is split between test and validation sets. This division allows for comprehensive evaluation of the model's performance both during and after training.
-
-## Preprocessing
-Before the actual training, the data needs to be prepared. This step includes scaling pixel values, normalizing the datasets, and cleaning the data to remove any noise or distortions. Proper data preparation is key to improving the model's performance.
-
-## Hyperparameter Optimization with Flaml
-To achieve the best results, Flaml is used to find the optimal hyperparameters for the LightGBM model. Flaml is an automated tool for hyperparameter optimization that conducts an efficient search for the best parameters, further enhancing the model's performance.
-
-## Machine Training with LightGBM
-The prepared LightGBM model is trained on the training dataset using the optimized hyperparameters. This step involves fitting the model to the training data to learn patterns and relationships necessary for correctly recognizing captcha characters.
-
-## Evaluation and Output
-After training, the model is evaluated on the test dataset to verify its accuracy. The accuracy is calculated for both individual characters and the complete captcha. To demonstrate the model's performance and accuracy, results are visualized and compared with the actual labels.
-
-## LightGBM Conclusion
-The LightGBM model achieved an accuracy of approximately 80% on the captcha test set. While this is a commendable result, it highlights some limitations of using LightGBM for captcha recognition. The model excels at recognizing individual characters, but it is not fully optimized for solving complete captchas due to its primary focus on single character recognition. This constraint suggests that while LightGBM can be a useful tool for captcha recognition, it might require additional techniques or complementary models to handle the complexities of full captcha sequences effectively.
-
 
 # Conclusion
 Our analysis shows that while machines solve CAPTCHAs significantly faster than humans, they also make more mistakes. Through targeted model optimizations—especially in handling noise and different fonts—we were able to significantly improve recognition accuracy. Despite initial challenges, we achieved all our goals, and the final solution exceeded our expectations.
