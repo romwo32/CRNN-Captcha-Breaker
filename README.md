@@ -1,5 +1,6 @@
 # Captcha-Breaker
-Exploring various Deep Learning approaches to solve CAPTCHA-related challenges. This repository includes model implementations and evaluations for bypassing Text Recognition CAPTCHAs using neural networks like CNN, CRNN & LigthGBM. 🚀🔓
+Exploring various Deep Learning approaches to solve CAPTCHA-related challenges. This repository includes a model implementation and evaluation for bypassing Text Recognition CAPTCHAs using CRNN. 🚀🔓
+
 # What are Captchas? 
 A CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a type of challenge-response test used to determine whether the user is a human or a bot. It is commonly used on websites and online services to prevent automated programs (bots) from performing actions that could be harmful or undesirable, such as spamming, brute-force attacks, or data scraping.
 
@@ -38,7 +39,6 @@ Somne Examples:
 ![image](https://github.com/user-attachments/assets/227cb327-3475-456d-9855-9cd87dc238dd)
 ![image](https://github.com/user-attachments/assets/f7d0024e-0c5b-4475-a66f-00909eab600f)
 ![image](https://github.com/user-attachments/assets/4a6e04b1-968f-4def-aafb-818f689b966e)
-
 
 
 
@@ -143,19 +143,17 @@ While CRNNs offer great potential, they also have their limitations. They are co
 
 Nevertheless, CRNNs remain a powerful tool for OCR tasks, offering significant advantages in processing and predicting text sequences in varied conditions. With continued improvements in training data quality, model architecture, and preprocessing techniques, CRNNs can be further enhanced to address their current weaknesses.
 
-# Conclusion
-Our analysis shows that while machines solve CAPTCHAs significantly faster than humans, they also make more mistakes. Through targeted model optimizations—especially in handling noise and different fonts—we were able to significantly improve recognition accuracy. Despite initial challenges, we achieved all our goals, and the final solution exceeded our expectations.
+# Project Conclusion
+My analysis shows that while CRNNs solve CAPTCHAs significantly faster than humans, they also make more mistakes. Through targeted model optimizations—especially in handling noise and different fonts—we were able to significantly improve recognition accuracy. Despite initial challenges, I achieved all my goals, and the final solution exceeded our expectations.
 
 By implementing techniques such as Levenshtein distance similarity checks and dictionary matching, we further reduced the error rate. However, real-world applications still face challenges, particularly with web scraping due to additional security measures.
 
-Our results confirm that text-based CAPTCHAs no longer provide sufficient security against AI-driven attacks. Therefore, we recommend switching to alternative CAPTCHA methods to ensure future protection.
+My results confirm that text-based CAPTCHAs no longer provide sufficient security against AI-driven attacks. Therefore, we recommend switching to alternative CAPTCHA methods to ensure future protection.
 
 # Credits
 This project was made possible by the following open-source repositories:
 
 https://github.com/EVOL-ution/Captcha-Recognition-using-CRNN?tab=MIT-1-ov-file
-
-https://github.com/DrMahdiRezaei/Deep-CAPTCHA/tree/master
 
 Minor parts of the work, including the splitting script debugging and optimizing tasks, were assisted by ChatGPT and Claude AI.
 
