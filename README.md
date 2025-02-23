@@ -12,7 +12,7 @@ Audio CAPTCHA: A series of spoken letters or numbers that the user must enter.
 ReCAPTCHA: A more advanced system, often used by Google, that not only tests human interaction but also helps improve machine learning by analyzing user behaviors.
 CAPTCHAs help safeguard websites, prevent malicious actions, and protect online services from abuse by ensuring that only real humans can perform certain activities.
 
-# Why It's Important to Understand How Models Solve Our CAPTCHAs
+# Why It's Important to Understand How Models Solve CAPTCHAs
 
 Understanding how models solve CAPTCHAs is essential for several reasons, particularly when protecting valuable assets:
 
